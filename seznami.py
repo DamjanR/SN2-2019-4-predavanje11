@@ -25,3 +25,7 @@ del stevila[0]
 
 print("spremenjen seznam:")
 print(stevila)
+
+print("Vsi elementi prek for zanke")
+for stevilo in stevila:
+    print("Sedaj je število enako " + str(stevilo))
