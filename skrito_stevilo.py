@@ -22,10 +22,10 @@ while True:
     if stevilo == skrito_stevilo:
         print("Čestitke")
         break
-    elif stevilo > skrito_stevilo:
-        print("Število je manjše")
-    else:
+    elif stevilo < skrito_stevilo:
         print("Število je večje")
+    else:
+        print("Število je manjše")
 
 print("Število poskusov je bilo:" + str(stevec))
 
@@ -33,4 +33,4 @@ tocke.append(stevec)
 
 with open("tocke.txt", "w") as datoteka:
 # za pretvorbo int v str je json.dumps !
-    datoteka.write(json.loads(tocke))
+    datoteka.write(json.dumps(tocke))
